@@ -1,0 +1,85 @@
+body {
+  font-family: 'Merriweather', serif;
+  background: #f3f7fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.header {
+  background-color: #6b5b95;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.header nav a {
+  color: #ffe;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+.stories-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.story-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease-in-out;
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+}
+
+.story-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+  color: #6b5b95;
+}
+
+.story-card .author {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.story-card .summary {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.read-btn {
+  background-color: #6b5b95;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.read-btn:hover {
+  background-color: #5a4b81;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #eee;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}

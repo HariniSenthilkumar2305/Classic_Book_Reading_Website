@@ -1,0 +1,97 @@
+/* Reset and font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background: linear-gradient(to right, #f6eee3, #e8dbce);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Signup Container */
+.signup-container {
+  width: 100%;
+  max-width: 450px;
+  padding: 2rem;
+}
+
+/* Signup Box */
+.signup-box {
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.signup-box h2 {
+  color: #3b2f2f;
+  margin-bottom: 0.5rem;
+}
+
+.signup-box p {
+  color: #6d584c;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: #3b2f2f;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #3b2f2f;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #5d4337;
+}
+
+/* Extra links */
+.extra-links {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.extra-links a {
+  color: #3b2f2f;
+  text-decoration: none;
+}
+
+.extra-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .signup-box {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,84 @@
+body {
+  font-family: 'Merriweather', serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.header nav a {
+  color: #ddd;
+  text-decoration: underline;
+  font-size: 0.9rem;
+}
+
+.stories-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.story-card {
+  background: white;
+  border-left: 6px solid #444;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.story-card:hover {
+  transform: scale(1.02);
+}
+
+.story-card h2 {
+  color: #222;
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+
+.author {
+  font-style: italic;
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.summary {
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.read-btn {
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.read-btn:hover {
+  background-color: #111;
+}
+
+footer {
+  background: #eee;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}

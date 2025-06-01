@@ -1,0 +1,155 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.7;
+  padding: 0 20px;
+}
+
+/* Header */
+.story-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4a148c;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.story-header h1 {
+  font-size: 1.8rem;
+}
+
+.back-home-btn {
+  text-decoration: none;
+  background-color: #fff;
+  color: #4a148c;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.back-home-btn:hover {
+  background-color: #e0cfff;
+}
+
+/* Main Container */
+main#story-container {
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 30px;
+}
+
+/* Story Card */
+.story-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.story-title {
+  font-size: 2.2rem;
+  color: #4a148c;
+  margin-bottom: 10px;
+}
+
+.story-author {
+  font-size: 1rem;
+  color: #757575;
+  margin-bottom: 25px;
+}
+
+.story-content p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* Error Card */
+.error-card {
+  text-align: center;
+  padding: 40px;
+}
+
+.error-card h2 {
+  font-size: 1.8rem;
+  color: #c62828;
+  margin-bottom: 20px;
+}
+
+.error-card p {
+  margin-bottom: 20px;
+}
+
+.error-card .back-home-btn {
+  background-color: #4a148c;
+  color: #fff;
+}
+
+.error-card .back-home-btn:hover {
+  background-color: #3b0f75;
+}
+
+/* Footer */
+.story-footer {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .story-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .story-header h1 {
+    margin-bottom: 10px;
+  }
+
+  main#story-container {
+    padding: 20px;
+  }
+
+  .story-title {
+    font-size: 1.8rem;
+  }
+
+  .story-content p {
+    font-size: 1rem;
+  }
+}
+.save-button-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+#saveToReadsBtn {
+  background-color: #6a4cad;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-family: 'Merriweather', serif;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#saveToReadsBtn:hover {
+  background-color: #54359c;
+}
+

@@ -1,0 +1,71 @@
+body {
+  font-family: 'Merriweather', serif;
+  margin: 0;
+  background: #fefaf6;
+  color: #333;
+}
+
+.my-reads-header {
+  background: #6a4cad;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.back-home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  text-decoration: none;
+  background: #54359c;
+  padding: 8px 16px;
+  border-radius: 6px;
+}
+
+#myReadsContainer {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.story-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.story-card:hover {
+  transform: scale(1.02);
+}
+
+.read-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #6a4cad;
+  font-weight: bold;
+}
+
+.read-link:hover {
+  text-decoration: underline;
+}
+
+.empty-msg {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 50px;
+  color: #777;
+}
+
+.my-reads-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #eee;
+  margin-top: 40px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Reads – Classic Reads</title>
+  <link rel="stylesheet" href="styles/myReads.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="my-reads-header">
+    <h1>📚 My Saved Stories</h1>
+    <a href="dashboard.html" class="back-home-btn">🏠 Back to Dashboard</a>
+  </header>
+
+  <main id="myReadsContainer">
+    <!-- JavaScript will inject saved stories here -->
+  </main>
+
+  <footer class="my-reads-footer">
+    <p>&copy; 2025 Classic Reads. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Get saved stories from localStorage
+    const reads = JSON.parse(localStorage.getItem("myReads")) || [];
+    const container = document.getElementById("myReadsContainer");
+
+    if (reads.length === 0) {
+      container.innerHTML = "<p class='empty-msg'>You haven’t saved any stories yet. Explore and save some!</p>";
+    } else {
+      reads.forEach(story => {
+        const card = document.createElement("div");
+        card.className = "story-card";
+
+        card.innerHTML = `
+          <h2>${story.title}</h2>
+          <p><strong>ID:</strong> ${story.id}</p>
+          <a href="${story.url}" class="read-link">📖 Read Again</a>
+        `;
+
+        container.appendChild(card);
+      });
+    }
+  </script>
+</body>
+</html>

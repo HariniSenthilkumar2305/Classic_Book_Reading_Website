@@ -1,0 +1,146 @@
+/* styles/romance.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  background: #fff0f6;
+  color: #4a2c2a;
+  margin: 0;
+  padding: 0 20px 40px;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  text-align: center;
+  padding: 40px 0 20px;
+  border-bottom: 2px solid #d87c7c;
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  margin: 0 0 8px;
+  color: #b94e48;
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+.header nav a {
+  color: #b94e48;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-bottom: 1.5px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+.header nav a:hover,
+.header nav a:focus {
+  color: #7c2b27;
+  border-color: #7c2b27;
+  outline: none;
+}
+
+.stories-container {
+  max-width: 900px;
+  margin: 40px auto 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.story-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px 20px 30px;
+  box-shadow: 0 4px 15px rgba(185, 78, 72, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-card:hover,
+.story-card:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(185, 78, 72, 0.3);
+}
+
+.story-card h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.6rem;
+  color: #842f2a;
+}
+
+.author {
+  font-style: italic;
+  font-size: 1rem;
+  margin: 0 0 14px;
+  color: #a15a57;
+}
+
+.summary {
+  flex-grow: 1;
+  font-size: 1.05rem;
+  color: #5e3b39;
+  margin-bottom: 20px;
+}
+
+.read-btn {
+  align-self: flex-start;
+  background-color: #b94e48;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px rgba(185, 78, 72, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.read-btn:hover,
+.read-btn:focus {
+  background-color: #7c2b27;
+  box-shadow: 0 6px 15px rgba(124, 43, 39, 0.6);
+  outline: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0 10px;
+  border-top: 2px solid #d87c7c;
+  font-size: 0.9rem;
+  color: #7c2b27;
+  user-select: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  body {
+    padding: 0 15px 30px;
+  }
+
+  .header h1 {
+    font-size: 2.2rem;
+  }
+
+  .story-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .read-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
